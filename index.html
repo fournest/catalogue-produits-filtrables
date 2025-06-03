@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,32 @@
     <title>tp catalogue produits filtrables</title>
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Recherche et filtrage de produits</h1>
+    </header>
+
+    <nav>
+        <div class="recherche">
+            <input type="text" id="searchInput" placeholder="Rechercher des produits......">
+            <!-- <button id="searchButton">Rechercher</button> -->
+        </div>
+
+
+        <div class="filter-buttons">
+            <button class="filter-btn" data-filter="tous">Tous</button>
+            <button class="filter-btn" data-filter="electronique">Electronique</button>
+            <button class="filter-btn" data-filter="livres">Livres</button>
+            <button class="filter-btn" data-filter="vetements">Vêtements</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="produits" id="produits">
+
+        </div>
+    </main>
 </body>
+
 </html>
